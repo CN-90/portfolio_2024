@@ -1,0 +1,585 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: #1C1C1C;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.w-90 {
+    width: 90%;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-col-reverse {
+    flex-direction: column-reverse;
+}
+
+.text-lg {
+    font-size: 5.625rem;
+}
+
+.text-md {
+    font-size: 3.125rem;
+}
+
+.px-5 {
+    padding: 0 1.25rem;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-yellow {
+    color: #F9C95F;
+}
+
+.text-gray {
+    color: #B7B7B7;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.leading-none {
+    line-height: 1;
+}
+
+.font-normal {
+    font-weight: normal;
+}
+
+.hide {
+    display: none;
+}
+
+.primary-font {
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+#primary-header {
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+#about {
+    width: 95%;
+    margin: auto;
+    position: relative;
+}
+
+
+#svg_ctn {
+    width: 50%;
+    margin: auto;
+    position: relative;
+    bottom: 100px;
+}
+
+
+#name_title {
+    position: relative;
+    right: 30px;
+}
+
+#name_title .text-white {
+    position: relative;
+    right: 5px;
+    font-size: 3.5cqw;
+    text-shadow: -4px 9px #000000;
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+#name_title .text-yellow {
+    font-size: 1.50cqw;
+}
+
+#name_title .text-gray {
+    padding-top: 5px;
+    padding-left: 5px;
+    letter-spacing: 5px;
+    font-size: 1cqw;
+}
+
+#tucson_svg {
+    z-index: 10;
+    position: relative;
+    bottom: 35px;
+}
+
+#Layer_1 {
+    position: relative;
+    right: 20px;
+    top: 50px;
+}
+
+#small_me {
+    cursor: pointer;
+    height: 200px;
+
+}
+
+#work {
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 80px;
+}
+
+#work .primary-font {
+    font-size: 80px;
+    color: white;
+}
+
+#project_ctn {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    gap: 20px;
+    padding-top: 40px
+}
+
+.project {
+    border-radius: 5px;
+    padding-bottom: 50px;
+    flex-basis:100%;
+    max-width: 580px;
+    margin: 0 auto;
+}
+
+.project-details {
+    padding: 5px
+}
+
+.project h1 {
+    color:#F9C95F;
+    padding-top: 25px;
+}
+
+.project h1 a {
+    color: #F9C95F;
+    text-decoration: none;
+}
+.project h2 {
+    color: rgb(200, 200, 200);
+}
+
+.project img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+}
+
+.project-description {
+    color: rgb(200, 200, 200);
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+#construction {
+    font-family: "Protest Revolution", sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+
+}
+
+
+
+@media screen and (max-width: 1700px) {
+    #work {
+        width: 75%;
+    }
+
+    #contact_btn {
+        padding: 20px;
+    }
+
+    #name_title .text-white {
+        position: relative;
+        right: 5px;
+        text-shadow: -4px 9px #000000;
+
+    }
+}
+
+@media screen and (max-width: 1600px){
+    #project_ctn {
+        flex-direction: column;
+    }
+
+
+
+    .project {
+        padding: 40px 10px 40px 10px;
+    }
+    
+    .project-details {
+        padding: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 1500px) {
+    #about {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    #name_title {
+        right: 0;
+    }
+
+    #name_title .text-white {
+        font-size: 3.5cqw;
+        text-shadow: -4px 1px #000000
+    }
+
+    #name_title .text-yellow {
+        font-size: 2.3cqw;
+    }
+
+    #name_title .text-gray {
+        font-size: 1cqw;
+    }
+
+    #small_me {
+        height: 175px;
+    }
+
+    #header {
+        width: 100%;
+    }
+
+    #svg_ctn {
+        width: 70%;
+        position: relative;
+    }
+
+    #tucson_svg {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    #work {
+        position: relative;
+        
+    }
+}
+
+
+
+@media screen and (max-width: 800px) {
+    #primary-header {
+        position: relative;
+    }
+
+    #svg_ctn {
+        width: 100%;
+        bottom: 0;
+    }
+
+    #name_title .text-white {
+        font-size: 6.8cqw;
+        text-shadow: -4px 1px #000000
+    }
+
+    #name_title .text-yellow {
+        font-size: 2.5cqw;
+    }
+
+    #name_title .text-gray {
+        font-size: 2cqw;
+    }
+    .project img {
+        width: 100%;
+    }
+
+    #project_ctn {
+        padding-top: 10px;
+    }
+
+    .project-details {
+        padding: 0px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 690px) {
+
+
+    #name_title {
+        right: 25px;
+    }
+
+    #work {
+        bottom: 0px;
+        width: 90%;
+
+    }
+
+    #work .primary-font {
+        font-size: 50px;
+    }
+
+    #footer_contact {
+        width: 50px;
+        left: 0;
+        bottom: 0;
+        
+    }
+
+    
+}
+
+
+@media screen and (max-width: 400px) {
+
+    #about {
+        width: 100%;
+    }
+
+    #small_me {
+        height: 125px;
+    }
+
+    #name_title {
+        right: 10px;
+        bottom: 5px;
+
+    }
+
+
+    #name_title .text-white {
+        font-size: 9cqw;
+    }
+
+    #name_title .text-yellow {
+        font-size: 3.6cqw;
+    }
+
+
+    #work {
+        top: 15px
+    }
+
+
+    #footer_contact {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Animations  */
+/* Animations  */
+/* Animations  */
+
+#cloud_x5F_one {
+
+    animation: floatTwo 20s infinite reverse;
+}
+
+#cloud_x5F_two {
+
+    animation: float 10s infinite;
+}
+
+
+#cat_body {
+    animation: breathe 1.6s infinite alternate ease-out;
+}
+
+
+#sleep_x5F_one {
+    animation: sleep 3.5s infinite ease-in;
+    animation-delay: .4;
+}
+
+
+#sleep_x5F_two {
+    animation: sleep 3.5s infinite ease-in;
+}
+
+
+#christian {
+    animation: rockBody 5s infinite alternate ease-out;
+    transform-origin: bottom center;
+}
+
+#dripping_x2B_paint path {
+    fill: none;
+    stroke: #7A202D;
+    stroke-width: 3;
+    stroke-dasharray: 1353px;
+    stroke-dashoffset: 1353px;
+    animation: drip 180s linear forwards;
+    border-radius: 50%;
+
+}
+
+#second_x5F_drip path {
+    animation-delay: 1s;
+}
+
+
+#blue_x5F_prints {
+    animation: readBlueprints 10s infinite alternate ease-in-out;
+}
+
+#footer_contact {
+    width: 75px;
+    height: 50px;
+    background: rgb(127, 118, 247);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+    text-decoration: none;
+}
+
+#footer_contact i {
+    color: white;
+    font-size: 40px;
+}
+
+
+
+@keyframes readBlueprints {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes drip {
+
+    0% {
+        stroke-dashoffset: 1353px;
+        stroke-width: 3px;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+@keyframes sleep {
+    0% {
+        opacity: 1;
+    }
+
+
+
+    100% {
+        transform: translateX(210px) scale(0.8);
+        opacity: 0;
+    }
+}
+
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes floatTwo {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+
+}
+
+
+@keyframes breathe {
+    0% {
+        cy: 90.3;
+    }
+
+    100% {
+        cy: 86.3;
+    }
+}
+
+
+@keyframes rockBody {
+    0% {
+        transform: rotate(1deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-1deg);
+    }
+
+}
